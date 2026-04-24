@@ -1,0 +1,19 @@
+Write a Python script to summarize the contents of a CSV file. The CSV file will always have three columns.
+Column 0: Machine Name
+Column 1: Assignee
+Column 2: Machine Type
+
+Any entry in column 1 other than whitespace or an empty string must be counted as assigned.
+An entry in column 1 of "hwbroken" is a non-functional machine. Count these separately, as they are not assigned to a workload.
+
+The summarization must be written to a markdown file named "summarized.md". The following things must be in the summarization.
+
+1. A table of machine types and other information. For each machine type...
+1.a. Show the machine type. The column name is "Machine Type".
+1.b. Show the number of machines. The column name is "Machine Count".
+1.c. Show the number of unassigned machines. The column name is "Free".
+1.d. Show the number of assigned machines. The column name is "Assigned".
+1.e. Show the number of non-functional machines. The column name is "BROKEN". 
+
+The Python script should accept exactly one argument, the CSV filename.
+
